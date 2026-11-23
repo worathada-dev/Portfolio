@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครชมรมเว็บไซต์</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>สมัครชมรมเว็บ</h1>
+    </header>
+    <nav>
+        <a href="index.html">โปรไฟล์</a> | 
+        <a href="register.html">สมัครชมรม</a>
+    </nav>
+    <main>
+        <form method="get">
+            <label for="Fullname">ชื่อ-นามสกุล :</label>
+            <input type="text" id="name" 
+                   name="name" required><br>
+
+            <label for="email">อีเมล :</label>
+            <input type="email" id="email" 
+                   name="email" required><br>
+                   
+            <input type="radio" id="m4" name="grade" 
+                   value="m4"required>
+            <label for="m4">ม.4</label>
+            <input type="radio" id="m5" name="grade" 
+                   value="m5"required>
+            <label for="m5">ม.5</label>
+            <input type="radio" id="m6" name="grade" 
+            value="m6"frequired>
+            <label for="m6">ม.6</label><br>
+
+            <label for="time">ช่วงเวลาที่ว่าง :</label>
+            <select id="time" name="time" required>
+                <option value=""> -- เลือกวัน -- </option>
+                <option value="Monday">วันจันทร์ หลังเลิกเรียน</option>
+                <option value="Tuesday">วันอังคาร หลังเลิกเรียน</option>
+                <option value="Wednesday">วันพุธ หลังเลิกเรียน</option>
+                <option value="Thursday">วันพฤหัสบดี หลังเลิกเรียน</option>
+                <option value="Friday">วันศุกร์ หลังเลิกเรียน</option>
+                <option value="Saturday">วันเสาร์ หลังเลิกเรียน</option>
+                <option value="Sunday">วันอาทิตย์ หลังเลิกเรียน</option>
+            </select><br>
+            <label for="reason">ทำไมถึงอยากเข้าชมรม :</label><br>
+            <textarea id="reason" name="reason" rows="4" ></textarea><br>
+                <button type="submit">สมัคร</button>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

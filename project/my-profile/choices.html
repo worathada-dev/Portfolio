@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตัวเลือกในฟอร์ม</title>
+</head>
+<body>
+    <form method="get">
+        <p>
+        <label for="nickname">ชื่อเล่น :</label>
+        <input type="text" id="nickname" 
+        name="nickname"
+        placeholder="เช่น โตเติ้ล"
+        required>
+        </p>
+        <p>ชั้นเรียน :
+        <input type="radio" id="m4" name="grade" 
+               value="m4" required>
+        <label for="m4">ม.4</label>
+        <input type="radio" id="m5" name="grade"
+               value="m5" >
+        <label for="m5">ม.5</label>
+        <input type="radio" id="m6" name="grade"
+               value="m6" >
+        <label for="m6">ม.6</label>
+        </p>
+        <p>สนใจเรื่อง :
+            <input type="checkbox" id="design" 
+            name="interest" value="design" checked>
+            <label for="design">ออกแบบเว็บไซต์</label>
+            <input type="checkbox" id="code" 
+            name="interest" value="code" >
+            <label for="code">เขียนโค้ด</label>
+            <input type="checkbox" id="photo" 
+            name="interest" value="photo" >
+            <label for="photo">ถ่ายภาพผลงานด</label>
+        </p>
+        <p>
+            <label for="time">เวลาว่าง :</label>
+            <select id="time" name="time" required>
+                <option value=""> -- เลือกวัน -- </option>
+                <option value="Monday">วันจันทร์ หลังเลิกเรียน</option>
+                <option value="Tuesday">วันอังคาร หลังเลิกเรียน</option>
+                <option value="Wednesday">วันพุธ หลังเลิกเรียน</option>
+                <option value="Thursday">วันพฤหัสบดี หลังเลิกเรียน</option>
+                <option value="Friday">วันศุกร์ หลังเลิกเรียน</option>
+                <option value="Saturday">วันเสาร์ หลังเลิกเรียน</option>
+                <option value="Sunday">วันอาทิตย์ หลังเลิกเรียน</option>
+            </select> 
+        </p>
+        <p>
+            <label for="reason">ทำไมอยากเข้าชมรม :</label><br>
+            <textarea id="reason" name="reason"
+             rows="4" cols="40"
+            placeholder="เล่าสั้น ๆ"></textarea>
+        </p>
+        <button type="submit">ส่งขใบสมัคร</button>
+    </form>
+</body>
+</html>
