@@ -84,7 +84,7 @@ section { padding: 24px 0; }
     text-decoration: none;
 }
 
-.skills {
+.skills ul {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
